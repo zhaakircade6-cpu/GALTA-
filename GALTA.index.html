@@ -1,0 +1,2108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GALTA Air Travel Logistic Agency</title>
+
+<style>
+
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#172033;
+    background:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar{
+    background:#061c3a;
+    color:#fff;
+    padding:10px 0;
+    font-size:13px;
+}
+
+.top-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.top-left{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.top-left span{
+    white-space:nowrap;
+}
+
+.social{
+    display:flex;
+    gap:12px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.nav-container{
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-circle{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:#061c3a;
+    color:#e9b62f;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    font-weight:bold;
+    border:3px solid #e9b62f;
+}
+
+.logo-text h2{
+    color:#061c3a;
+    font-size:25px;
+    line-height:1;
+}
+
+.logo-text small{
+    font-size:8px;
+    color:#555;
+    letter-spacing:.5px;
+}
+
+
+/* NAVIGATION */
+
+.navbar{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.navbar a{
+    color:#172033;
+    font-size:13px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:#d5a522;
+}
+
+.menu-btn{
+    display:none;
+    border:none;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:570px;
+    color:white;
+    display:flex;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(3,25,55,.96),
+        rgba(3,25,55,.70),
+        rgba(3,25,55,.20)
+    ),
+    url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.hero-text{
+    max-width:680px;
+}
+
+.hero-text .small-title{
+    color:#e9b62f;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.hero-text h1{
+    font-size:52px;
+    line-height:1.1;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.hero-text h1 span{
+    color:#e9b62f;
+}
+
+.hero-text p{
+    font-size:16px;
+    max-width:600px;
+    color:#eef3f8;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:28px;
+}
+
+.hero-btn{
+    padding:13px 22px;
+    border-radius:4px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.gold-btn{
+    background:#e9b62f;
+    color:#061c3a;
+}
+
+.blue-btn{
+    background:#061c3a;
+    color:#fff;
+}
+
+.white-btn{
+    background:#fff;
+    color:#061c3a;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+}
+
+
+/* GET IN TOUCH */
+
+.touch-box{
+    width:320px;
+    background:rgba(3,25,55,.94);
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+.touch-box h3{
+    color:#e9b62f;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.touch-item{
+    padding:7px 0;
+    font-size:14px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.touch-item:last-child{
+    border-bottom:none;
+}
+
+.whatsapp-text{
+    color:#25d366;
+    font-weight:bold;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-heading{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-heading span{
+    color:#d5a522;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.section-heading h2{
+    color:#061c3a;
+    font-size:34px;
+    margin-top:5px;
+}
+
+.section-line{
+    width:50px;
+    height:3px;
+    background:#d5a522;
+    margin:12px auto;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+    padding:75px 0;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service-card{
+    padding:30px 22px;
+    border:1px solid #e5e7eb;
+    border-radius:8px;
+    text-align:center;
+    background:#fff;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.service-icon{
+    width:60px;
+    height:60px;
+    background:#061c3a;
+    color:#e9b62f;
+    border-radius:50%;
+    margin:0 auto 18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+}
+
+.service-card h3{
+    color:#061c3a;
+    margin-bottom:10px;
+}
+
+.service-card p{
+    color:#64748b;
+    font-size:14px;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    background:#061c3a;
+    color:#fff;
+    padding:35px 0;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.stat{
+    text-align:center;
+    border-right:1px solid rgba(255,255,255,.2);
+}
+
+.stat:last-child{
+    border:none;
+}
+
+.stat-icon{
+    font-size:30px;
+    color:#e9b62f;
+}
+
+.stat h3{
+    font-size:18px;
+}
+
+.stat p{
+    color:#cbd5e1;
+    font-size:13px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    padding:80px 0;
+    background:#f8fafc;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.about-text h2{
+    font-size:38px;
+    color:#061c3a;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#64748b;
+    margin-bottom:15px;
+}
+
+
+/* =========================
+   MISSION / VISION
+========================= */
+
+.values{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:30px;
+}
+
+.value-box{
+    background:#fff;
+    padding:25px;
+    border-radius:8px;
+    border-left:4px solid #e9b62f;
+}
+
+.value-box h3{
+    color:#061c3a;
+    margin-bottom:8px;
+}
+
+.value-box p{
+    font-size:14px;
+    color:#64748b;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+.form-section{
+    padding:80px 0;
+}
+
+.form-box{
+    max-width:850px;
+    margin:auto;
+    padding:35px;
+    background:#f8fafc;
+    border-radius:10px;
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group.full{
+    grid-column:1/-1;
+}
+
+.form-group label{
+    font-weight:bold;
+    margin-bottom:6px;
+    color:#334155;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    padding:13px;
+    border:1px solid #cbd5e1;
+    border-radius:5px;
+    background:#fff;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#d5a522;
+}
+
+.submit-btn{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border:none;
+    border-radius:5px;
+    background:#061c3a;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#e9b62f;
+    color:#061c3a;
+}
+
+
+/* =========================
+   COUNTRIES
+========================= */
+
+.countries{
+    padding:80px 0;
+    background:#f8fafc;
+}
+
+.country-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:12px;
+}
+
+.country-card{
+    background:#fff;
+    padding:25px 10px;
+    text-align:center;
+    border-radius:7px;
+    border:1px solid #e5e7eb;
+}
+
+.country-card .flag{
+    font-size:35px;
+    margin-bottom:8px;
+}
+
+.country-card h3{
+    font-size:14px;
+    color:#061c3a;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+    padding:80px 0;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:8px;
+    height:240px;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    padding:80px 0;
+    background:#061c3a;
+    color:#fff;
+}
+
+.contact .section-heading h2{
+    color:#fff;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.contact-card{
+    background:#102b50;
+    padding:30px;
+    text-align:center;
+    border-radius:8px;
+}
+
+.contact-card .icon{
+    font-size:30px;
+    color:#e9b62f;
+}
+
+.contact-card h3{
+    margin:10px 0;
+}
+
+.contact-card p{
+    color:#cbd5e1;
+}
+
+.whatsapp-main{
+    display:block;
+    width:max-content;
+    margin:30px auto 0;
+    padding:14px 25px;
+    background:#25d366;
+    color:#fff;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#020b18;
+    color:#94a3b8;
+    padding:30px 0;
+    text-align:center;
+}
+
+.footer-logo{
+    color:#e9b62f;
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25d366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    z-index:2000;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    .navbar{
+        gap:10px;
+    }
+
+    .navbar a{
+        font-size:11px;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    .country-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+
+@media(max-width:800px){
+
+    .top-content{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .social{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .navbar{
+        display:none;
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        padding:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,.1);
+    }
+
+    .navbar.active{
+        display:flex;
+    }
+
+    .hero{
+        padding:80px 0;
+    }
+
+    .hero-content{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .touch-box{
+        width:100%;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-image img{
+        height:300px;
+    }
+
+    .values{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+        gap:25px;
+    }
+
+    .stat{
+        border:none;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+
+@media(max-width:550px){
+
+    .top-left{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    .logo-text h2{
+        font-size:21px;
+    }
+
+    .hero-text h1{
+        font-size:34px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .hero-btn{
+        text-align:center;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-group.full{
+        grid-column:auto;
+    }
+
+    .country-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-box{
+        padding:20px;
+    }
+}
+
+.main-logo{
+    width:180px;
+    height:auto;
+    display:block;}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="top-bar">
+
+<div class="container top-content">
+
+<div class="top-left">
+
+<span>📞 +252 907 782 828</span>
+
+<span>📞 +252 904 029 631</span>
+
+<span>📞 +252 906 116 752</span>
+
+<span>✉️ galtaairtr@gmail.com</span>
+
+<span>🕐 Open 24 Hours - Day & Night</span>
+
+</div>
+
+<div class="social">
+
+<span>Facebook</span>
+<span>Instagram</span>
+<span>WhatsApp</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+<div class="container nav-container">
+
+
+<a href="#home" class="logo">
+<img
+src="images/logo.png"
+alt="GALTA Logo"
+class="main-logo"
+>
+</a>
+
+
+<nav class="navbar" id="navbar">
+
+<a href="#home" class="active">Home</a>
+
+<a href="#about">About Us</a>
+
+<a href="#services">Services</a>
+
+<a href="#visa">Visa Application</a>
+
+<a href="#flight">Flight Booking</a>
+
+<a href="#countries">Countries</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact Us</a>
+
+</nav>
+
+
+<button
+class="menu-btn"
+onclick="toggleMenu()"
+>
+☰
+</button>
+
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content">
+
+
+<div class="hero-text">
+
+<div class="small-title">
+WELCOME TO GALTA
+</div>
+
+<h1>
+
+YOUR TRUSTED
+
+<span>
+TRAVEL
+</span>
+
+& LOGISTICS PARTNER
+
+</h1>
+
+<p>
+
+GALTA Air Travel Logistic Agency waxay kuu
+haysaa adeegyo dhamaystiran oo ku saabsan
+safarka, duulimaadyada, fiisaha, hoteellada
+iyo logistics.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="#visa" class="hero-btn gold-btn">
+🛂 APPLY FOR VISA
+</a>
+
+<a href="#flight" class="hero-btn blue-btn">
+✈ BOOK FLIGHT
+</a>
+
+<a href="#contact" class="hero-btn white-btn">
+📞 CONTACT US
+</a>
+
+</div>
+
+</div>
+
+
+<div class="touch-box">
+
+<h3>
+GET IN TOUCH
+</h3>
+
+<div class="touch-item">
+📞 +252 907 782 828
+</div>
+
+<div class="touch-item">
+📞 +252 904 029 631
+</div>
+
+<div class="touch-item">
+📞 +252 906 116 752
+</div>
+
+<div class="touch-item whatsapp-text">
+🟢 WhatsApp Available
+</div>
+
+<div class="touch-item">
+✉️ galtaairtr@gmail.com
+</div>
+
+<div class="touch-item">
+📍 JUBBA AIRWAYS OFFICE
+</div>
+
+<div class="touch-item">
+GLK Aaga Daraawiishta
+<br>
+Galkayo, Somalia
+</div>
+
+<div class="touch-item">
+🕐 Open 24 Hours
+<br>
+Day & Night
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>
+OUR SERVICES
+</span>
+
+<h2>
+What We Offer
+</h2>
+
+<div class="section-line"></div>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<div class="service-card">
+
+<div class="service-icon">✈</div>
+
+<h3>
+Flight Ticket Booking
+</h3>
+
+<p>
+Waxaan kuu helnaa tigidhada
+diyaaradaha iyo safarada caalamiga ah.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🛂</div>
+
+<h3>
+Visa Processing
+</h3>
+
+<p>
+Waxaan kaa caawinaa diyaarinta
+iyo codsiga fiisaha.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🌍</div>
+
+<h3>
+Immigration Consultation
+</h3>
+
+<p>
+La-talin ku saabsan socdaalka,
+immigration iyo shuruudaha safarka.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🏨</div>
+
+<h3>
+Hotel Reservations
+</h3>
+
+<p>
+Waxaan kaa caawinaa inaad hesho
+hoteel ku habboon safarkaaga.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">📄</div>
+
+<h3>
+Document Assistance
+</h3>
+
+<p>
+Caawimaad diyaarinta dukumiintiyada
+iyo waraaqaha safarka.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🚚</div>
+
+<h3>
+Logistics Services
+</h3>
+
+<p>
+Adeegyo logistics oo la isku halayn
+karo oo hufan.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats">
+
+<div class="container stats-grid">
+
+
+<div class="stat">
+
+<div class="stat-icon">🏆</div>
+
+<h3>
+Trusted Agency
+</h3>
+
+<p>
+Professional Service
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">👥</div>
+
+<h3>
+1000+
+</h3>
+
+<p>
+Happy Clients
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">🌍</div>
+
+<h3>
+50+
+</h3>
+
+<p>
+Countries
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">🕐</div>
+
+<h3>
+24/7
+</h3>
+
+<p>
+Customer Support
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+
+<div class="about-image">
+
+<img
+src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1000&q=80"
+alt="Travel"
+>
+
+</div>
+
+
+<div class="about-text">
+
+<div class="section-heading" style="text-align:left;margin-bottom:20px;">
+
+<span>
+ABOUT US
+</span>
+
+<h2>
+GALTA Air Travel Logistic Agency
+</h2>
+
+</div>
+
+<p>
+
+GALTA Air Travel Logistic Agency waa shirkad
+ku takhasustay adeegyada safarka, duulimaadyada,
+fiisaha, hoteellada iyo logistics.
+
+</p>
+
+<p>
+
+Waxaan u adeegnaa macaamiisheena si xirfad leh,
+daacadnimo iyo kalsooni leh.
+
+</p>
+
+<p>
+
+Himiladeenu waa inaan safarkaaga ka dhigno
+mid fudud, ammaan ah oo lagu kalsoonaan karo.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="values">
+
+
+<div class="value-box">
+
+<h3>
+🎯 Mission
+</h3>
+
+<p>
+Inaan bixino adeegyo safar iyo logistics
+oo tayo sare leh.
+</p>
+
+</div>
+
+
+<div class="value-box">
+
+<h3>
+👁 Vision
+</h3>
+
+<p>
+Inaan noqono hay'adda safarka ee ugu
+kalsoonida badan.
+</p>
+
+</div>
+
+
+<div class="value-box">
+
+<h3>
+⭐ Core Values
+</h3>
+
+<p>
+Daacadnimo, kalsooni, tayo iyo adeeg
+macaamiil oo wanaagsan.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     VISA APPLICATION
+========================= -->
+
+<section class="form-section" id="visa">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>
+VISA SERVICES
+</span>
+
+<h2>
+Apply For Visa
+</h2>
+
+<div class="section-line"></div>
+
+</div>
+
+
+<div class="form-box">
+
+<form onsubmit="submitVisa(event)">
+
+
+<div class="form-grid">
+
+
+<div class="form-group">
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+id="visaName"
+placeholder="Enter your full name"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Passport Number
+</label>
+
+<input
+type="text"
+id="passport"
+placeholder="Passport Number"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Nationality
+</label>
+
+<input
+type="text"
+id="nationality"
+placeholder="Nationality"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Country Applying For
+</label>
+
+<input
+type="text"
+id="visaCountry"
+placeholder="Country"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Phone
+</label>
+
+<input
+type="tel"
+id="visaPhone"
+placeholder="+252..."
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+id="visaEmail"
+placeholder="Email"
+required
+>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>
+Upload Passport
+</label>
+
+<input
+type="file"
+accept=".jpg,.jpeg,.png,.pdf"
+>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>
+Upload Documents
+</label>
+
+<input
+type="file"
+multiple
+>
+
+</div>
+
+
+</div>
+
+
+<button
+type="submit"
+class="submit-btn"
+>
+
+Submit Visa Application
+
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FLIGHT BOOKING
+========================= -->
+
+<section class="form-section" id="flight">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>
+FLIGHT SERVICES
+</span>
+
+<h2>
+Book Your Flight
+</h2>
+
+<div class="section-line"></div>
+
+</div>
+
+
+<div class="form-box">
+
+<form onsubmit="submitFlight(event)">
+
+
+<div class="form-grid">
+
+
+<div class="form-group">
+
+<label>
+Departure
+</label>
+
+<input
+type="text"
+id="departure"
+placeholder="Departure City"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Destination
+</label>
+
+<input
+type="text"
+id="destination"
+placeholder="Destination City"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Departure Date
+</label>
+
+<input
+type="date"
+id="departureDate"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Return Date
+</label>
+
+<input
+type="date"
+id="returnDate"
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Number of Passengers
+</label>
+
+<input
+type="number"
+id="passengers"
+min="1"
+value="1"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Cabin Class
+</label>
+
+<select id="cabin" required>
+
+<option value="">
+Select Cabin Class
+</option>
+
+<option>
+Economy
+</option>
+
+<option>
+Business
+</option>
+
+<option>
+First Class
+</option>
+
+</select>
+
+</div>
+
+
+</div>
+
+
+<button
+type="submit"
+class="submit-btn"
+>
+
+Request Flight Booking
+
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     COUNTRIES
+========================= -->
+
+<section class="countries" id="countries">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>
+TRAVEL DESTINATIONS
+</span>
+
+<h2>
+Popular Countries
+</h2>
+
+<div class="section-line"></div>
+
+</div>
+
+
+<div class="country-grid">
+
+
+<div class="country-card">
+<div class="flag">🇦🇪</div>
+<h3>UAE</h3>
+</div>
+
+
+<div class="country-card">
+<div class="flag">🇹🇷</div>
+<h3>Turkey</h3>
+</div>
+
+
+<div class="country-card">
+<div class="flag">🇸🇦</div>
+<h3>Saudi Arabia</h3>
+</div>
+
+
+<div class="country-card">
+<div class="flag">🇮🇳</div>
+<h3>India</h3>
+</div>
+
+
+<div class="country-card">
+<div class="flag">🇪🇬</div>
+<h3>Egypt</h3>
+</div>
+
+
+<div class="country-card">
+<div class="flag">🌍</div>
+<h3>Worldwide</h3>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section class="gallery" id="gallery">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>
+OUR GALLERY
+</span>
+
+<h2>
+Travel With GALTA
+</h2>
+
+<div class="section-line"></div>
+
+</div>
+
+
+<div class="gallery-grid">
+
+
+<div class="gallery-item">
+
+<img
+src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+alt="Airplane"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+alt="Travel"
+>
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80"
+alt="City Travel"
+>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>
+CONTACT US
+</span>
+
+<h2>
+Get In Touch
+</h2>
+
+<div class="section-line"></div>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<div class="icon">
+📍
+</div>
+
+<h3>
+Our Office
+</h3>
+
+<p>
+JUBBA AIRWAYS OFFICE
+<br>
+GLK Aaga Daraawiishta
+<br>
+Galkayo, Somalia
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">
+📞
+</div>
+
+<h3>
+Call Us
+</h3>
+
+<p>
++252 907 782 828
+<br>
++252 904 029 631
+<br>
++252 906 116 752
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">
+✉️
+</div>
+
+<h3>
+Email Us
+</h3>
+
+<p>
+galtaairtr@gmail.com
+<br>
+Open 24 Hours
+<br>
+Day & Night
+</p>
+
+</div>
+
+
+</div>
+
+
+<a
+href="https://wa.me/252907782828"
+target="_blank"
+class="whatsapp-main"
+>
+
+🟢 Chat With GALTA On WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-logo">
+GALTA
+</div>
+
+<p>
+GALTA AIR TRAVEL LOGISTIC AGENCY
+</p>
+
+<p>
+JUBBA AIRWAYS OFFICE • GLK Aaga Daraawiishta • Galkayo, Somalia
+</p>
+
+<p style="margin-top:10px;">
+© 2026 GALTA Air Travel Logistic Agency. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP FLOATING BUTTON
+========================= -->
+
+<a
+href="https://wa.me/252907782828"
+target="_blank"
+class="whatsapp-float"
+title="Chat on WhatsApp"
+>
+💬
+</a>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+function toggleMenu(){
+
+    document
+    .getElementById("navbar")
+    .classList
+    .toggle("active");
+
+}
+
+
+/* VISA FORM */
+
+function submitVisa(event){
+
+    event.preventDefault();
+
+    var name =
+    document.getElementById("visaName").value;
+
+    var passport =
+    document.getElementById("passport").value;
+
+    var nationality =
+    document.getElementById("nationality").value;
+
+    var country =
+    document.getElementById("visaCountry").value;
+
+    var phone =
+    document.getElementById("visaPhone").value;
+
+    var email =
+    document.getElementById("visaEmail").value;
+
+
+    var message =
+    "GALTA VISA APPLICATION%0A%0A" +
+
+    "Full Name: " + name + "%0A" +
+
+    "Passport Number: " + passport + "%0A" +
+
+    "Nationality: " + nationality + "%0A" +
+
+    "Country: " + country + "%0A" +
+
+    "Phone: " + phone + "%0A" +
+
+    "Email: " + email;
+
+
+    window.open(
+    "https://wa.me/252907782828?text=" + message,
+    "_blank"
+    );
+
+}
+
+
+/* FLIGHT FORM */
+
+function submitFlight(event){
+
+    event.preventDefault();
+
+
+    var departure =
+    document.getElementById("departure").value;
+
+    var destination =
+    document.getElementById("destination").value;
+
+    var departureDate =
+    document.getElementById("departureDate").value;
+
+    var returnDate =
+    document.getElementById("returnDate").value;
+
+    var passengers =
+    document.getElementById("passengers").value;
+
+    var cabin =
+    document.getElementById("cabin").value;
+
+
+    var message =
+    "GALTA FLIGHT BOOKING REQUEST%0A%0A" +
+
+    "Departure: " + departure + "%0A" +
+
+    "Destination: " + destination + "%0A" +
+
+    "Departure Date: " + departureDate + "%0A" +
+
+    "Return Date: " + returnDate + "%0A" +
+
+    "Passengers: " + passengers + "%0A" +
+
+    "Cabin Class: " + cabin;
+
+
+    window.open(
+    "https://wa.me/252907782828?text=" + message,
+    "_blank"
+    );
+
+}
+
+</script>
+
+
+</body>
+</html>
