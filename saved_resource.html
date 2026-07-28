@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://web-sandbox.oaiusercontent.com/? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GALTA Travel and Logistic</title>
+  <link rel="stylesheet" href="./style.css">
+<style>html,body,#root{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0;padding:0}html,body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Helvetica Neue,Arial,sans-serif!important}button,input,textarea,select{font-family:inherit}html{background-color:transparent}html.chatgptOled.dark,html.mobileSkybridge.dark{background-color:#000}@supports (font: -apple-system-body){html.mobileSkybridge{font:-apple-system-body}}html.desktopSkybridge.dark{background-color:#1e1e1e}html.transparentSkybridgeBackground,html.transparentSkybridgeBackground.dark{background-color:transparent}html.androidSkybridge,html.androidSkybridge body,html.androidSkybridge *{-webkit-tap-highlight-color:rgba(255,255,255,0)}html.androidSkybridge *::selection,html.androidSkybridge *::-moz-selection{background:#fff0;color:inherit}</style></head>
+<body>
+  <div class="topbar">
+    <span>📍 JUBBA AIRWAYS OFFICE • GLK Aaga Daraawiishta Galkaio, Somalia</span>
+    <span>✉ galtaairtr@gmail.com</span>
+    <span>◷ Open 24 Hours – Day &amp; Night</span>
+    <span>📱 Facebook &nbsp; Instagram &nbsp; WhatsApp</span>
+  </div>
+
+  <header class="header">
+    <a class="brand" href="https://web-sandbox.oaiusercontent.com/?#home">
+      <div class="brand-mark">G✈</div>
+      <div><strong>GALTA</strong><small>TRAVEL AND LOGISTIC</small></div>
+    </a>
+    <nav>
+      <a class="active" href="https://web-sandbox.oaiusercontent.com/?#home">Home</a>
+      <a href="https://web-sandbox.oaiusercontent.com/?#about">About Us</a>
+      <a href="https://web-sandbox.oaiusercontent.com/?#services">Services</a>
+      <a href="https://web-sandbox.oaiusercontent.com/?#visa">Visa Application</a>
+      <a href="https://web-sandbox.oaiusercontent.com/?#flight">Flight Booking</a>
+      <a href="https://web-sandbox.oaiusercontent.com/?#countries">Countries</a>
+      <a href="https://web-sandbox.oaiusercontent.com/?#gallery">Gallery</a>
+      <a href="https://web-sandbox.oaiusercontent.com/?#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR TRUSTED TRAVEL PARTNER</p>
+          <h1>GALTA Air Travel<br><span>Logistic Agency</span></h1>
+          <p>We make your travel easy, safe and reliable.</p>
+          <div class="buttons">
+            <a class="btn gold" href="https://web-sandbox.oaiusercontent.com/?#visa">▣ &nbsp; Apply for Visa</a>
+            <a class="btn dark" href="https://web-sandbox.oaiusercontent.com/?#flight">✈ &nbsp; Book Flight</a>
+            <a class="btn outline" href="https://web-sandbox.oaiusercontent.com/?#contact">☎ &nbsp; Contact Us</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h2>Get In Touch</h2>
+          <a href="https://wa.me/252907782828" target="_blank">🟢 +252 907 782 828</a>
+          <a href="https://wa.me/252904029631" target="_blank">🟢 +252 904 029 631</a>
+          <a href="https://wa.me/252906116752" target="_blank">🟢 +252 906 116 752</a>
+          <a href="https://wa.me/252906797914" target="_blank">🟢 +252 906 797 914</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <p class="eyebrow center">OUR SERVICES</p>
+      <h2 class="section-title">What We Do</h2>
+      <div class="services-grid">
+        <article><div class="icon">✈</div><h3>Flight Ticket<br>Booking</h3><p>Book domestic &amp; international flights with ease.</p></article>
+        <article><div class="icon">▣</div><h3>Visa Processing</h3><p>Fast and reliable visa application services.</p></article>
+        <article><div class="icon">◎</div><h3>Immigration<br>Consultation</h3><p>Expert advice on immigration processes.</p></article>
+        <article><div class="icon">▦</div><h3>Hotel Reservations</h3><p>Best hotel deals worldwide.</p></article>
+        <article><div class="icon">▤</div><h3>Document<br>Assistance</h3><p>Help with travel documents &amp; certificates.</p></article>
+        <article><div class="icon">▣</div><h3>Logistics Services</h3><p>Reliable cargo &amp; logistic solutions.</p></article>
+      </div>
+    </section>
+
+    <section class="forms section">
+      <div id="flight" class="form-card">
+        <h2>✈ &nbsp; Book Your Flight</h2>
+        <form onsubmit="sendFlight(event)">
+          <div class="form-grid">
+            <label>Departure<input id="departure" required="" placeholder="Select Departure City"></label>
+            <label>Destination<input id="destination" required="" placeholder="Select Destination City"></label>
+            <label>Departure Date<input id="departureDate" required="" type="date"></label>
+            <label>Return Date<input id="returnDate" type="date"></label>
+            <label>Number of Passengers<input id="passengers" required="" type="number" min="1" value="1"></label>
+            <label>Cabin Class<select id="cabin"><option>Economy</option><option>Business</option><option>First Class</option></select></label>
+          </div>
+          <label>Travel Country<select id="travelCountry"><option>Select Country</option><option>Turkey</option><option>UAE</option><option>Saudi Arabia</option><option>Qatar</option><option>Ethiopia</option><option>Kenya</option><option>UK</option><option>USA</option><option>Canada</option><option>Germany</option><option>France</option></select></label>
+          <button class="submit gold" type="submit">✈ &nbsp; Request Flight Booking</button>
+        </form>
+      </div>
+
+      <div id="visa" class="form-card">
+        <h2>▣ &nbsp; Apply For Visa</h2>
+        <form onsubmit="sendVisa(event)">
+          <div class="form-grid">
+            <label>Full Name<input id="fullName" required="" placeholder="Enter your full name"></label>
+            <label>Passport Number<input id="passport" required="" placeholder="Passport Number"></label>
+            <label>Nationality<input id="nationality" required="" placeholder="Nationality"></label>
+            <label>Country Applying For<select id="visaCountry" required=""><option value="">Select Country</option><option>Turkey</option><option>UAE</option><option>Saudi Arabia</option><option>Qatar</option><option>Ethiopia</option><option>Kenya</option><option>UK</option><option>USA</option><option>Canada</option><option>Germany</option><option>France</option><option>Other</option></select></label>
+            <label>Phone<input id="phone" required="" placeholder="+252..."></label>
+            <label>Email<input id="email" type="email" required="" placeholder="Email Address"></label>
+            <label>Upload Passport<input id="passportFile" type="file" accept=".pdf,.jpg,.jpeg,.png"></label>
+            <label>Upload Documents<input id="documents" type="file" multiple="" accept=".pdf,.jpg,.jpeg,.png"></label>
+          </div>
+          <button class="submit gold" type="submit">➤ &nbsp; Submit Visa Application</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="countries" class="section destinations">
+      <p class="eyebrow center">POPULAR DESTINATIONS</p>
+      <h2 class="section-title">Choose Your Destination</h2>
+      <div class="countries-grid">
+        <button>🇹🇷<b>Turkey</b></button><button>🇦🇪<b>UAE</b></button><button>🇸🇦<b>Saudi Arabia</b></button>
+        <button>🇶🇦<b>Qatar</b></button><button>🇪🇹<b>Ethiopia</b></button><button>🇰🇪<b>Kenya</b></button>
+        <button>🇬🇧<b>UK</b></button><button>🇺🇸<b>USA</b></button><button>🇨🇦<b>Canada</b></button>
+        <button>🇩🇪<b>Germany</b></button><button>🇫🇷<b>France</b></button><button>🌐<b>Other Countries</b></button>
+      </div>
+    </section>
+
+    <section id="about" class="why">
+      <div><p class="eyebrow">WHY CHOOSE GALTA</p><h2>Your Journey,<br>Our Responsibility</h2><p>We are committed to providing the best travel and logistics services with professionalism, integrity and care.</p></div>
+      <div class="why-grid">
+        <article><span>🛡</span><b>Trusted Service</b><small>Thousands of happy customers.</small></article>
+        <article><span>♧</span><b>24/7 Support</b><small>We are always here for you.</small></article>
+        <article><span>🤝</span><b>Best Deals</b><small>Competitive prices worldwide.</small></article>
+        <article><span>★</span><b>Professional Team</b><small>Experienced &amp; friendly staff.</small></article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <p class="eyebrow center">OUR GALLERY</p><h2 class="section-title">GALTA &amp; JUBBA AIRWAYS</h2>
+      <img src="./jubba-airways.jpg" alt="Jubba Airways and Galta Travel Agency">
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2>Contact GALTA</h2>
+      <p>JUBBA AIRWAYS OFFICE • GLK Aaga Daraawiishta Galkaio, Somalia</p>
+      <p>✉ galtaairtr@gmail.com &nbsp; | &nbsp; ◷ Open 24 Hours – Day &amp; Night</p>
+      <div class="buttons">
+        <a class="btn gold" href="mailto:galtaairtr@gmail.com">Email Us</a>
+        <a class="btn dark" href="https://wa.me/252906797914" target="_blank">Chat on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div><h2>G✈ GALTA</h2><p>Your Trusted Travel Partner</p></div>
+      <div><h3>Quick Links</h3><a href="https://web-sandbox.oaiusercontent.com/?#home">Home</a><a href="https://web-sandbox.oaiusercontent.com/?#about">About Us</a><a href="https://web-sandbox.oaiusercontent.com/?#services">Services</a><a href="https://web-sandbox.oaiusercontent.com/?#visa">Visa Application</a><a href="https://web-sandbox.oaiusercontent.com/?#flight">Flight Booking</a><a href="https://web-sandbox.oaiusercontent.com/?#contact">Contact Us</a></div>
+      <div><h3>Contact Info</h3><p>📍 JUBBA AIRWAYS OFFICE<br>GLK Aaga Daraawiishta<br>Galkaio, Somalia</p><p>✉ galtaairtr@gmail.com</p></div>
+      <div><h3>Chat on WhatsApp</h3><a href="https://wa.me/252907782828">🟢 +252 907 782 828</a><a href="https://wa.me/252904029631">🟢 +252 904 029 631</a><a href="https://wa.me/252906116752">🟢 +252 906 116 752</a><a href="https://wa.me/252906797914">🟢 +252 906 797 914</a></div>
+    </div>
+    <div class="copyright">© 2026 GALTA Air Travel Logistic Agency. All Rights Reserved.</div>
+  </footer>
+  <script src="./script.js.download"></script>
+
+</body></html>
